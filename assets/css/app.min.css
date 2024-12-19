@@ -2592,8 +2592,9 @@ body {
 }
 .product-photo {
   border-radius: 100%;
-  width: 9.38em;
-  height: 9.38em;
+  width: 3.38em;
+  height: 3.38em;
+  margin:2em;
   transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .product-photo.active-prod {

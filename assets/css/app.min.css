@@ -5665,6 +5665,7 @@ body {
   }
   .navbar.fixednav {
     position: fixed;
+    z-index: 99999;
   }
   .nav-wrap {
     padding-left: 5.56em;

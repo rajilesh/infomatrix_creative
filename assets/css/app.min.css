@@ -2339,7 +2339,7 @@ body {
   position: relative;
 }
 .flex-half.flex-left {
-  background-color: #1c2928;
+  background-color: #15171c;
   align-items: center;
 }
 .flex-half.flex-left.is-beige {
@@ -2371,7 +2371,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Heading Pro 700", sans-serif;
-  font-size: 7.29em;
+  font-size: 5.29em;
   font-weight: 700;
   line-height: 1;
 }
@@ -2435,6 +2435,9 @@ body {
   height: 10.42em;
   top: 11.04em;
   left: 7.97em;
+  top: 15.04em;
+  left: -0.03em;
+  position: relative;
 }
 .overview-photo.overview-photo3 {
   width: 21.88em;
@@ -2479,8 +2482,15 @@ body {
   width: 8.33em;
   height: 8.33em;
   position: absolute;
-  top: -4.17em;
+  top: 6.17em;
   right: 3.59em;
+}
+.hiring_msg {
+  color: #000;
+  padding: 2em;
+}
+.hiring_msg a{
+  color: #000;
 }
 .app-bg {
   width: 100%;
@@ -2866,12 +2876,16 @@ body {
   transition: width 0.8s cubic-bezier(0.19, 1, 0.22, 1);
   position: absolute;
   overflow: hidden;
+  white-space: nowrap;
 }
 .email-title {
   z-index: 2;
   color: #535353;
   margin-bottom: 1.82em;
   position: relative;
+}
+.whatsapp_contact{
+  width:5em;
 }
 .signup-wrap {
   padding-top: 6.25em;
@@ -3560,12 +3574,12 @@ body {
 }
 .cta-button {
   z-index: 200;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   color: var(--black);
   border-radius: 0.26em;
   justify-content: center;
   align-items: center;
-  padding: 1.2em 2em;
+  /* padding: 1.2em 2em; */
   text-decoration: none;
   position: fixed;
   top: 2em;
@@ -5294,8 +5308,14 @@ body {
   }
   .cta-button {
     border-radius: 0.65em;
-    padding: 1.28em 1.96em;
-    display: none;
+    padding: 1.28em 1.96em; 
+    position: fixed;
+    bottom: 7em;
+    right: 4em;
+    top: auto;
+  }
+  .email-link.email-abs{
+    display:none;
   }
   .cta-p {
     font-size: 2.08em;
@@ -6511,4 +6531,30 @@ body {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
     U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+@font-face {
+  font-family: 'Heading Pro Regular';
+  src: url('../fonts/HeadingPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heading Pro 900';
+  src: url('../fonts/HeadingPro-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heading Pro 700';
+  src: url('../fonts/HeadingPro-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
